@@ -22,6 +22,7 @@ class Main {
     PrintWriter valueOutput=new PrintWriter("outFile.txt");
     Scanner valueInput = new Scanner(System.in);
      double[] valueHolder = new double[9];
+     double numberEntry=0;
     try {
       for (int v = 0; v < 9; ++v) {
         System.out.println("Enter a number, q to quit.");
@@ -31,9 +32,8 @@ class Main {
         } else {
           x = 0;
         }
-        double numberEntry = Double.parseDouble(entrada);
-        sum = sum + numberEntry;
-        numberOfNumbers++;
+        numberEntry = Double.parseDouble(entrada);
+        valueHolder[v]=numberEntry;
       }
 
 
@@ -45,9 +45,14 @@ class Main {
     }
     finally{
       for(double element:valueHolder){
-        System.out.println(numberOfNumbers);
-        System.out.println(sum);
+        sum = sum + element;
+        numberOfNumbers++;
+        valueOutput.println("value: "+element);
+        valueOutput.println("at element: "+numberOfNumbers);
+        valueOutput.println("running sum= "+sum);
+
       }
+      valueOutput.close();
     }
   }
 }

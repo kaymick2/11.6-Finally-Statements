@@ -1,0 +1,27 @@
+value: 3.0
+at element: 1
+running sum= 3.0
+value: 34.0
+at element: 2
+running sum= 37.0
+value: 56.0
+at element: 3
+running sum= 93.0
+value: 23.0
+at element: 4
+running sum= 116.0
+value: 34.0
+at element: 5
+running sum= 150.0
+value: 2.0
+at element: 6
+running sum= 152.0
+value: 34.0
+at element: 7
+running sum= 186.0
+value: 45.0
+at element: 8
+running sum= 231.0
+value: 2.0
+at element: 9
+running sum= 233.0
